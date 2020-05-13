@@ -1,0 +1,490 @@
+.newsButton, .searchButton{
+	font-family : Georgia;
+	font-size: 14px;
+	color: black;
+	background: #f2f2f2;
+	display: block;
+	width: 100%;
+/*	cursor: pointer;
+*/	padding: 12px 14px;
+}
+
+.newsButton:hover, .searchButton:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.newsButton:focus, .searchButton:focus {
+	outline:0;
+}
+
+.newsButton {
+	border-radius: 3px 3px 0px 0px;
+	border: none;
+}
+
+.searchButton{
+	border-radius: 0px 0px 5px 5px;
+	border: none;
+}
+
+
+.active{
+	background: #4d4d4d;
+	color: white;
+}
+
+#selection {
+	vertical-align: top;
+	width: 150px;
+	/*margin-left: 175px;*/
+	display: block;
+	position: fixed;
+	border: 1px solid #a6a6a6;
+	border-radius: 3px 3px 5px 5px;
+	margin:0px 52px;
+}
+
+.content {
+/*	margin: auto;
+*/	text-align: center;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width:1217px;
+
+}
+
+.slide{
+	vertical-align: top;
+	display: inline-block;
+	height: 240px;
+    width: 420px;
+    margin-left: 11px; 
+    position: relative;
+}
+
+.slideText{
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	background-color: rgba(51, 51, 51, 0.5);
+}
+
+.slideTitle, .slideDescription{
+	color: white;
+}
+
+.slideDescription {
+	margin: 12px;
+	font-size: 14px;
+}
+
+.slideTitle{
+	font-weight: bold;
+	margin:10px;
+	font-size:20px;
+}
+
+.slide:hover {
+   cursor: hand;
+   cursor: pointer;
+   opacity: .9;
+}
+
+.imagee{
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+}
+
+a.divLink {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   /* Makes sure the link doesn't get underlined */
+   z-index: 10;
+   /* raises anchor tag above everything else in div */
+   opacity: 0;
+   /*workaround to make clickable in IE */
+}
+
+#wordCloud {
+	display: inline-block;
+	background: #f2f2f2;
+	margin-left: 20px;
+}
+
+.middleElement {
+	display: inline-block;
+	/*margin-left: 46px;*/
+	/*width: 752px;*/
+}
+
+.CNNNews {
+	/*margin-left: 30px*/
+}
+
+.FOXNews {
+	/*margin-left: 30px*/
+}
+
+
+.textDisplay{
+	margin-top: 36px;
+    /* font-weight: bold; */
+    font-size: 30px;
+    font-family: Georgia;
+    margin-bottom: 0px;
+}
+
+hr.dotted-line{
+	border-top: 1.48px dotted black;
+	width: 771px;
+}
+
+.grid-container {
+	width: 772px;
+ 	display: grid;
+ 	grid-template-columns: auto auto auto auto;
+ 	grid-column-gap: 9px;
+}
+
+.google-news:hover {
+    cursor: text;
+}
+
+.search-section{
+	cursor: text;
+}
+
+
+
+.cardTitle{
+	font-weight: bold;
+	padding: 14px 3px;
+	font-size: 14px;
+}
+
+.cardDescription{
+	font-size:13px;
+}
+
+.cardImage{
+	object-fit: cover;
+	border-radius: 5px;
+	height: 133px;
+	width: 183.5px;
+}
+
+.card {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid  #a6a6a6;
+  background: #f2f2f2;
+  /*padding: 20px;*/
+  text-align: center;
+  border-width: 1px 2px 2px 1px;
+}
+
+.required{
+    color: red;
+}
+
+#category{
+	text-align-last: center;
+	vertical-align: middle;
+	width: 108px;
+}
+
+.keywordLabel{
+	font-size: 13px;
+}
+
+#source{
+	text-align-last: center;
+	width: 108px;
+	vertical-align: middle;
+}
+
+
+.initial-articles {
+	
+	margin-top: 27px;
+	text-align: left;
+}
+
+.final-articles{
+	text-align: left;
+	display: none;
+}
+
+#searchForm{
+	max-width: 100%;
+    /* width: auto; */
+    /* position: absolute; */
+    background: #f2f2f2;
+    padding: 20px 20px 20px 20px;
+    font-size: 14px;
+    font-family: Georgia;
+    border-radius: 5px;
+    /*margin:0px -12px 0px -20px;*/
+    position: relative;
+
+	/*position: relative;
+	background:#f2f2f2;
+	padding: 20px 10px;
+	font-size: 14px;
+	font-family: Georgia;
+	border-radius: 5px;*/
+	/*margin-left: 30px;*/
+}
+
+.search{
+	width: 700px;
+	display: inline-block;
+	/*margin-left: 3px;*/
+}
+.searchImage{
+	display: inline-block;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+input.keyword :focus{
+	outline:none;
+}
+
+.searchText{
+	width: 425px;
+    display: inline-block;
+    position: relative;
+ 	box-shadow: none;
+	border: none;
+    vertical-align: top;
+    padding-left:18px;
+}
+
+.searchText:hover {
+	box-shadow: none;
+	border: none;
+
+}
+
+.searchCard{
+	display: none;
+	max-width: 588px;
+	margin:10px 40px;
+	background: #f2f2f2;
+	cursor: pointer;
+	border: 1px solid #b3b3b3;
+	border-radius: 5px;	
+	padding: 15px;
+}
+
+.fullCard{
+	display: none;
+	max-width: 588px;
+	margin:10px 40px;
+	background: #f2f2f2;
+	border: 1px solid #b3b3b3;
+	border-radius: 5px;	
+	padding: 15px 15px 9px 15px;
+}
+
+.searchCard:hover {
+	box-shadow: 5px 10px 17px #bfbfbf, -5px 10px 17px #bfbfbf;
+}
+
+.fullCard:hover {
+	box-shadow: 5px 10px 17px #bfbfbf, -5px 10px 17px #bfbfbf;
+}
+
+.searchDescription, .searchAuthor, .searchSource, .searchDate, .searchLink, .shortDescription{
+	font-size: 12px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	padding: 2px 0px;
+}
+
+/*.searchLink {
+	padding: 6px;
+}*/
+
+
+.cross {
+	float: right;
+	position: relative;
+	top: -4px;
+	text-decoration: none;
+	font-size: large;
+}
+.searchTitle{
+	margin-bottom: 0px;
+	font-size: 15px;
+	margin-top: 0px;
+	font-weight: bold;
+}
+.searchImage:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.searchTitle:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchAuthor:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchSource:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchDescription:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.shortDescription:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchDate:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchLink:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchText:hover {
+	border:none;
+	box-shadow: none;
+}
+
+.searchCard .shortDescription{
+	white-space: nowrap;
+    overflow: hidden;
+   
+
+}
+
+.searchCard .searchAuthor, .searchCard .searchSource, .searchCard .searchLink, .searchCard .searchDate, .searchCard .searchDescription{
+	display: none;
+}
+
+.fullCard .shortDescription{
+	display: none;
+}
+
+#showButton{
+	margin:auto;
+	display: none;
+	background:#f2f2f2;
+	padding: 5px 15px;
+	border: none;
+	font-size: 13px;
+	outline: 0;
+	border-radius: 2px;
+}
+
+#showButton:hover{
+	background-color: #4CAF50;
+	color: white;
+	cursor: default;
+}
+
+.search-button{
+	padding: 5px 15px;
+	border: none;	
+	font-size: 12px;
+	outline: 0;
+	border-radius: 2px;
+	background: #f2f2f2;
+}
+
+
+.clear-button{
+	padding: 5px 15px;
+	border: none;
+	font-size: 12px;
+	margin-left: 20px;
+	background: #f2f2f2;
+	outline: 0;
+	border-radius: 2px;
+}
+input.search-button:hover{
+	background-color: #4CAF50;
+	color: white
+}
+
+input.clear-button:hover{
+	background-color: #4CAF50;
+	color: white
+}
+input#keywordText:focus{
+    outline: none;
+}
+
+input#myDateFrom:focus{
+    outline: none;
+}
+/*input[type=text]:focus{
+	outline:none;
+	border:0;
+}
+*/
+
+
+input#myDateTo:focus{
+    outline: none;
+}
+
+input#keywordText{
+	width: 93px;
+    height: 11px;
+    padding: 5px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+#myDateFrom{
+	border: none;
+	vertical-align: middle;
+	padding: 4px 4px 2px 4px;
+	width: 124px;
+	border-radius: 2px;
+}
+
+#myDateTo{
+    border: none;
+	vertical-align: middle;
+	padding: 4px 4px 2px 4px;
+	width: 124px;
+	border-radius: 2px;
+}
+
+
+#emptytag{
+	margin: 25px 0px;
+	font-size: 13px;
+}
+.fromLabel, .toLabel, .categoryLabel, .sourceLabel{
+	font-size: 13px;
+}
+body {
+    font-family: Georgia
+}
